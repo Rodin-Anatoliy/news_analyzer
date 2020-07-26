@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Новости, Анализ, Рейтинг, Топ">
+  <meta name="author" content="Родин Анатолий">
+  <meta name="description" content="Анализа происходящих в мире событий">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+  <link rel="shortcut icon" sizes="32x32" href="<%=require('./images/favicon.svg').default%>" type="image/x-icon">
+  <title>Анализа происходящих в мире событий</title>
+</head>
+<body>
+
+  <div class="main">
+
+    <header class="header header_black"> <!-- переиспользовае блока для светлой и темной темы, разобраться -->
+      <nav class="header__menu">
+        <p class="logo logo_header">NewsAnalyzer</p>
+        <ul class="header__menu-list">
+          <li class="header__menu-item"><a class="header__link" href="./index.html">Главная</a></li>
+          <li class="header__menu-item"><a class="header__link" href="./about.html">О проекте</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="content">
+
+      <section class="analytics">
+        <p class="analytics__site-page">Главная <span class="analytics__site-page analytics__site-page_grey">/ Аналитика</span></p>
+        <h3 class="title title_analytics">Вы спросили: «Путешествия»</h3>
+        <div class="analytics__numbers">
+            <p class="analytics__news-for-week">Новостей за неделю: <span class="analytics__news-for-week analytics__news-for-week_bold">34 324</span></p>
+            <p class="analytic__in-headline">Упоминаний в загаловках: <span class="analytics__in-headline analytics__in-headline_bold">235</span></p>
+        </div>
+      </section>
+
+      <section class="infographics">
+        <h3 class="title title_infographics">Аналитика по дням</h3>
+        <div class="infographics__diagram">
+            <p class="infographics__date">Дата (август)</p>
+            <p class="infographics__references">Кол-во упоминаний</p>
+            <div></div> <!--разобраться с графиком-->
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2020  Supersite</p>
+
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item"><a class="footer__link" href="./index.html">Главная</a></li>
+          <li class="footer__menu-item"><a class="footer__link" href="./about.html">О проекте</a></li>
+          <li class="footer__menu-item"><a class="footer__link" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a></li>
+        </ul>
+      </nav>
+
+      <ul class="footer__social">
+        <li class="footer__githug"><a class="footer__link" href="https://github.com/Rodin-Anatoliy/"><img class="footer__social-icons" alt="github" src="<%=require('./images/github.svg').default%>"></a></li>
+        <li class="footer__facebook"><a class="footer__link" href="https://www.facebook.com/rodin.tolya/"><img class="footer__social-icons" alt="facebook" src="<%=require('./images/facebook.svg').default%>" ></a></li>
+      </ul>
+    </footer>
+
+  </div>
+
+  <script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
+  
+</body>
+
+</html>
