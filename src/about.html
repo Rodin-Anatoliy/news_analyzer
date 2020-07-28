@@ -7,26 +7,25 @@
   <meta name="author" content="Родин Анатолий">
   <meta name="description" content="Анализа происходящих в мире событий">
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="shortcut icon" sizes="32x32" href="<%=require('./images/favicon.svg').default%>" type="image/x-icon">
   <title>Анализа происходящих в мире событий</title>
 </head>
-<body>
+<body class="root">
 
-  <div class="main">
-
-    <header class="header header_black"> <!-- переиспользовае блока для светлой и темной темы, разобраться -->
-      <nav class="header__menu">
-        <p class="logo logo_header">NewsAnalyzer</p>
-        <ul class="header__menu-list">
-          <li class="header__menu-item"><a class="header__link" href="./index.html">Главная</a></li>
-          <li class="header__menu-item"><a class="header__link" href="./about.html">О проекте</a></li>
+    <header class="header header_light">
+      <nav class="menu menu_light root__section">
+        <p class="menu__logo menu__logo_light">NewsAnalyzer</p>
+        <ul class="menu__list">
+          <li class="menu__item"><a class="menu__link" href="./index.html">Главная</a></li>
+          <li class="menu__item menu__item_about-page"><a class="menu__link menu__link_about-page" href="./about.html">О проекте</a></li>
         </ul>
       </nav>
     </header>
 
-    <main class="content">
+    <main class="content ">
 
-        <section class="for-clients">
+        <section class="for-clients root__section">
             <h3 class="title title_for-clients">Клиентам</h3>
             <p class="for-clients__paragraphs">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему научился студент, какими технологиями владеет.
 
@@ -39,29 +38,29 @@
                 Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы рекомендуем обратиться к этому студенту.</p>
         </section>
 
-        <section class="technologies">
+        <section class="technologies root__section">
             <h3 class="title title_technologies">Используемые технологии</h3>
             <div class="technologies__icons">
-                <div class="technologies__html">
-                    <h3 class="technologies__name">HTML</h3>
+                <div class="technologies__block">
+                    <p class="technologies__name">HTML</p>
                     <img class="technologies__picture" alt="HTML" src="<%=require('./images/html.svg').default%>">
                 </div>
-                <div class="technologies__css">
-                    <h3 class="technologies__name">CSS</h3>
+                <div class="technologies__block">
+                    <p class="technologies__name">CSS</p>
                     <img class="technologies__picture" alt="CSS" src="<%=require('./images/css.svg').default%>">
                 </div>
-                <div class="technologies__js">
-                    <h3 class="technologies__name">Java Script</h3>
+                <div class="technologies__block">
+                    <p class="technologies__name">Java Script</p>
                     <img class="technologies__picture" alt="Java Script" src="<%=require('./images/js.svg').default%>">
                 </div>
-                <div class="technologies__wp">
-                    <h3 class="technologies__name">Webpack</h3>
+                <div class="technologies__block">
+                    <p class="technologies__name">Webpack</p>
                     <img class="technologies__picture" alt="Webpack" src="<%=require('./images/Webpack.svg').default%>">
                 </div>
             </div>
         </section>
 
-      <section class="author">
+      <section class="author root__section">
         <img class="author__photo" alt="author" src="<%=require('./images/author.jpg').default%>">
         <div class="author__about">
           <h3 class="title title_author">Об авторе</h3>
@@ -69,13 +68,13 @@
         </div>
       </section>
 
-      <section class="github">
+      <section class="github swiper-container">
         <div class="github__head">
             <h3 class="title title_github">История коммитов из GitHub</h3>
             <a class="github__link" href="#">Открыть в Github ></a>
         </div>
-        <div class="github__commits-bar">
-            <div class="commit">
+        <div class="github__commits-bar swiper-wrapper" data-flickity='{ "groupCells": true }'>
+            <div class="commit swiper-slide">
                 <p class="commit__date">14 августа, 2019</p>
                 <div class="commit__author">
                     <img class="commit__photo" alt="photo" src="<%=require('./images/commit_1.jpg').default%>">
@@ -83,35 +82,137 @@
                         <p class="commit__author-name">Антон Долинин</p>
                         <p class="commit__author-mail">anton@yandex.ru</p>
                     </div>
-                    <p class="commit__text">
-                        Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
-                    </p>
+                </div>
+                <p class="commit__text">
+                  Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
+                </p>
+            </div>
+
+            <div class="commit swiper-slide">
+              <p class="commit__date">14 августа, 2019</p>
+              <div class="commit__author">
+                  <img class="commit__photo" alt="photo" src="<%=require('./images/commit_1.jpg').default%>">
+                  <div class="commit__author-info">
+                      <p class="commit__author-name">Антон Долинин</p>
+                      <p class="commit__author-mail">anton@yandex.ru</p>
+                  </div>
+              </div>
+              <p class="commit__text">
+                Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
+              </p>
+            </div>
+          
+            <div class="commit swiper-slide">
+              <p class="commit__date">14 августа, 2019</p>
+              <div class="commit__author">
+                  <img class="commit__photo" alt="photo" src="<%=require('./images/commit_1.jpg').default%>">
+                  <div class="commit__author-info">
+                      <p class="commit__author-name">Антон Долинин</p>
+                      <p class="commit__author-mail">anton@yandex.ru</p>
+                  </div>
+              </div>
+              <p class="commit__text">
+                Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
+              </p>
+            </div>
+
+            <div class="commit swiper-slide">
+              <p class="commit__date">14 августа, 2019</p>
+              <div class="commit__author">
+                  <img class="commit__photo" alt="photo" src="<%=require('./images/commit_1.jpg').default%>">
+                  <div class="commit__author-info">
+                      <p class="commit__author-name">Антон Долинин</p>
+                      <p class="commit__author-mail">anton@yandex.ru</p>
+                  </div>
+              </div>
+              <p class="commit__text">
+                Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
+              </p>
+            </div>
+
+            <div class="commit swiper-slide">
+              <p class="commit__date">14 августа, 2019</p>
+              <div class="commit__author">
+                  <img class="commit__photo" alt="photo" src="<%=require('./images/commit_1.jpg').default%>">
+                  <div class="commit__author-info">
+                      <p class="commit__author-name">Антон Долинин</p>
+                      <p class="commit__author-mail">anton@yandex.ru</p>
+                  </div>
+              </div>
+              <p class="commit__text">
+                Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
+              </p>
+            </div>
+
+          <div class="commit swiper-slide">
+            <p class="commit__date">14 августа, 2019</p>
+            <div class="commit__author">
+                <img class="commit__photo" alt="photo" src="<%=require('./images/commit_1.jpg').default%>">
+                <div class="commit__author-info">
+                    <p class="commit__author-name">Антон Долинин</p>
+                    <p class="commit__author-mail">anton@yandex.ru</p>
                 </div>
             </div>
+            <p class="commit__text">
+              Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
+            </p>
+          </div>
+
+          <div class="commit swiper-slide">
+            <p class="commit__date">14 августа, 2019</p>
+            <div class="commit__author">
+                <img class="commit__photo" alt="photo" src="<%=require('./images/commit_1.jpg').default%>">
+                <div class="commit__author-info">
+                    <p class="commit__author-name">Антон Долинин</p>
+                    <p class="commit__author-mail">anton@yandex.ru</p>
+                </div>
+            </div>
+            <p class="commit__text">
+              Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
+            </p>
+          </div>
+
+          <div class="commit swiper-slide">
+            <p class="commit__date">14 августа, 2019</p>
+            <div class="commit__author">
+                <img class="commit__photo" alt="photo" src="<%=require('./images/commit_1.jpg').default%>">
+                <div class="commit__author-info">
+                    <p class="commit__author-name">Антон Долинин</p>
+                    <p class="commit__author-mail">anton@yandex.ru</p>
+                </div>
+            </div>
+            <p class="commit__text">
+              Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
+            </p>
+          </div>
+
         </div>
+
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
       </section>
 
     </main>
 
-    <footer class="footer">
-      <p class="footer__copyright">&copy; 2020  Supersite</p>
-
+    <footer class="footer root__section">
+      <p class="footer__copyright">© 2019  Supersite</p>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
           <li class="footer__menu-item"><a class="footer__link" href="./index.html">Главная</a></li>
           <li class="footer__menu-item"><a class="footer__link" href="./about.html">О проекте</a></li>
-          <li class="footer__menu-item"><a class="footer__link" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a></li>
+          <li class="footer__menu-item"><a class="footer__link" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a></li>
         </ul>
       </nav>
-
       <ul class="footer__social">
-        <li class="footer__githug"><a class="footer__link" href="https://github.com/Rodin-Anatoliy/"><img class="footer__social-icons" alt="github" src="<%=require('./images/github.svg').default%>"></a></li>
-        <li class="footer__facebook"><a class="footer__link" href="https://www.facebook.com/rodin.tolya/"><img class="footer__social-icons" alt="facebook" src="<%=require('./images/facebook.svg').default%>" ></a></li>
-      </ul>
+        <li class="footer__social-item"><a class="footer__link" href="https://github.com/Rodin-Anatoliy/" target="_blank"><img class="footer__social-icons" alt="github" src="<%=require('./images/github.svg').default%>"></a></li>
+        <li class="footer__social-item"><a class="footer__link" href="https://www.facebook.com/rodin.tolya/" target="_blank"><img class="footer__social-icons" alt="facebook" src="<%=require('./images/facebook.svg').default%>"></a></li>
     </footer>
 
-  </div>
-
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
   
 </body>
