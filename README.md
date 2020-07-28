@@ -4,7 +4,7 @@
 
 [Ссылка на рабочую версию проекта](https://rodin-anatoliy.github.io/news_analyzer/)
 
-Версия проекта v0.0.3
+Версия проекта v0.0.4
 
 Дизайн макета предоставлен [Яндекс.Практикум](https://praktikum.yandex.ru/)
 
