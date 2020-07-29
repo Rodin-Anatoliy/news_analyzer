@@ -1,0 +1,7 @@
+.results__head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 190px;
+    align-items: center;
+}

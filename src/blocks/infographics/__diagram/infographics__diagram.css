@@ -1,0 +1,5 @@
+.infographics__diagram {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+}

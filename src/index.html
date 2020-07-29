@@ -6,7 +6,8 @@
   <meta name="keywords" content="Новости, Анализ, Рейтинг, Топ">
   <meta name="author" content="Родин Анатолий">
   <meta name="description" content="Анализа происходящих в мире событий">
-  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+  <!--<link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">-->
+  <link rel="stylesheet" href="./pages/index.css">
   <link rel="shortcut icon" sizes="32x32" href="<%=require('./images/favicon.svg').default%>" type="image/x-icon">
   <title>Анализа происходящих в мире событий</title>
 </head>
@@ -15,7 +16,7 @@
     <header class="header header_main"> <!-- переиспользовае блока для светлой и темной темы, разобраться -->
 
       <nav class="menu menu_dark root__section">
-        <p class="menu__logo menu__logo_dark">NewsAnalyzer</p>
+        <p class="logo logo_dark">NewsAnalyzer</p>
         <ul class="menu__list">
           <li class="menu__item menu__item_main-page"><a class="menu__link menu__link_main-page" href="./index.html">Главная</a></li>
           <li class="menu__item"><a class="menu__link" href="./about.html">О проекте</a></li>
@@ -41,10 +42,10 @@
           <a class="results__link" href="./paper.html">Посмотреть аналитику ></a>
         </div>
 
-        <div class="cards-pack">
+        <div class="news-cards">
           <div class="card">
             <div class="card__image"></div>
-            <div class="card__news">
+            <div class="card__news-info">
               <p class="card__date">2 августа, 2019</p>
               <h3 class="card__title">Национальное достояние – парки</h3>
               <p class="card__description">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
@@ -54,7 +55,7 @@
 
           <div class="card">
             <div class="card__image"></div>
-            <div class="card__news">
+            <div class="card__news-info">
               <p class="card__date">2 августа, 2019</p>
               <h3 class="card__title">Национальное достояние – парки</h3>
               <p class="card__description">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
@@ -64,7 +65,7 @@
 
           <div class="card">
             <div class="card__image"></div>
-            <div class="card__news">
+            <div class="card__news-info">
               <p class="card__date">2 августа, 2019</p>
               <h3 class="card__title">Национальное достояние – парки</h3>
               <p class="card__description">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
@@ -74,7 +75,7 @@
 
           <div class="card">
             <div class="card__image"></div>
-            <div class="card__news">
+            <div class="card__news-info">
               <p class="card__date">2 августа, 2019</p>
               <h3 class="card__title">Национальное достояние – парки</h3>
               <p class="card__description">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
@@ -84,7 +85,7 @@
 
           <div class="card">
             <div class="card__image"></div>
-            <div class="card__news">
+            <div class="card__news-info">
               <p class="card__date">2 августа, 2019</p>
               <h3 class="card__title">Национальное достояние – парки</h3>
               <p class="card__description">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
@@ -94,7 +95,7 @@
 
           <div class="card">
             <div class="card__image"></div>
-            <div class="card__news">
+            <div class="card__news-info">
               <p class="card__date">2 августа, 2019</p>
               <h3 class="card__title">Национальное достояние – парки</h3>
               <p class="card__description">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>

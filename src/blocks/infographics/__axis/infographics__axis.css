@@ -1,0 +1,6 @@
+.infographics__axis {
+    display: flex;
+    flex-direction: row;
+    margin-left: 140px;
+    justify-content: space-between;
+}

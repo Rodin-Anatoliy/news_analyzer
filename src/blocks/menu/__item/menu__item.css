@@ -1,0 +1,13 @@
+@import url(./_main-page/menu__item_main-page.css);
+@import url(./_about-page/menu__item_about-page.css);
+
+.menu__item {
+    list-style-type: none;
+    display: inline;
+    padding: 0 0 26px 0;
+    margin: 28px 0 -1px 34px;
+}
+
+.menu__item:first-child {
+    margin: 28px 0 -1px 0;
+}

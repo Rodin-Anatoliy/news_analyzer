@@ -1,0 +1,7 @@
+.author__about {
+    max-width: 600px;
+    margin-left: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

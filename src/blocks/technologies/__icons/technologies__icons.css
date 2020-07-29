@@ -1,0 +1,5 @@
+.technologies__icons {
+    display: flex;
+    flex-direction: row;
+    margin: 0 112px 0 178px;
+}

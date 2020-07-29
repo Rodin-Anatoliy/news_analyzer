@@ -1,0 +1,27 @@
+@import url(./_five/infographics__column_five.css);
+@import url(./_four/infographics__column_four.css);
+@import url(./_one/infographics__column_one.css);
+@import url(./_seven/infographics__column_seven.css);
+@import url(./_six/infographics__column_six.css);
+@import url(./_three/infographics__column_three.css);
+@import url(./_two/infographics__column_two.css);
+
+.infographics__column {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #2F71E5;
+    min-height: 24px;
+    margin: 25px 0 56px 0;
+}
+
+.infographics__column:last-child {
+    margin-bottom: 0;
+}

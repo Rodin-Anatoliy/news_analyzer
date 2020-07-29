@@ -1,0 +1,15 @@
+@import url(./__copyright/footer__copyright.css);
+@import url(./__link/footer__link.css);
+@import url(./__menu-item/footer__menu-item.css);
+@import url(./__menu-list/footer__menu-list.css);
+@import url(./__social-item/footer__social-item.css);
+@import url(./__social/footer__social.css);
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    background: #FFFFFF;
+    justify-content: space-between;
+    min-height: 80px;
+    align-items: center;
+}

@@ -1,0 +1,16 @@
+@import url(./__axis-numbers/infographics__axis-numbers.css);
+@import url(./__axis/infographics__axis.css);
+@import url(./__chart/infographics__chart.css);
+@import url(./__column/infographics__column.css);
+@import url(./__colums/infographics__colums.css);
+@import url(./__date/infographics__date.css);
+@import url(./__day/infographics__day.css);
+@import url(./__diagram-head/infographics__diagram-head.css);
+@import url(./__diagram/infographics__diagram.css);
+@import url(./__references/infographics__references.css);
+
+.infographics {
+    background: #F5F6F7;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}

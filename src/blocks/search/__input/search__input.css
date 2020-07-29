@@ -1,0 +1,33 @@
+.search__input {
+    outline: none;
+    background: #FFFFFF;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #B6BCBF;
+    margin: 0 213px 0 24px;
+}
+
+.search__input::-webkit-input-placeholder {
+    color:#B6BCBF; 
+    opacity:1;
+}/* webkit */
+
+.search__input::-moz-placeholder {
+    color:#B6BCBF; 
+    opacity:1;
+}/* Firefox 19+ */
+
+.search__input:-moz-placeholder {
+    color:#B6BCBF;
+    opacity:1;
+}/* Firefox 18- */
+
+.search__input:-ms-input-placeholder {
+    color:#B6BCBF;
+    opacity:1;
+}/* IE */
