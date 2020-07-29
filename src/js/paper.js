@@ -1,3 +1,1 @@
-export function paper() {
-    console.log("paper");
-}
+import '../pages/paper.css';

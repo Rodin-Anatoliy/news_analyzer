@@ -1,5 +1,5 @@
 .card__image {
-    background-image: url(../images/1.jpg);
+    background-image: url(../../../images/1.jpg);
     background-size: cover;
     min-height: 272px;
 }

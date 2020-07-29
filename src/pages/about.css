@@ -11,5 +11,7 @@
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/for-clients/for-clients.css);
 @import url(../blocks/technologies/technologies.css);
+@import url(../blocks/swiper/swiper.css);
 @import url(../blocks/github/github.css);
 @import url(../blocks/commit/commit.css);
+@import url(../blocks/author/author.css);
