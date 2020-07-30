@@ -4,8 +4,9 @@
 @import url(./_github/title_github.css);
 @import url(./_header/title_header.css);
 @import url(./_infographics/title_infographics.css);
-@import url(./_results/title_results.css);
+@import url(./_founds/title_founds.css);
 @import url(./_technologies/title_technologies.css);
+@import url(./_not-found/title_not-found.css);
 
 .title {
     font-family: 'Roboto Slab', Arial, sans-serif;

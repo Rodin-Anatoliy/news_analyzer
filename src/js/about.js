@@ -1,4 +1,6 @@
-import '../pages/about.css';
+//import '../pages/about.css';
+//мешает работе live server VS Code
+
 import swiper from './swiper.js';
 
 var mySwiper = new Swiper('.swiper-container', {
@@ -10,6 +12,7 @@ var mySwiper = new Swiper('.swiper-container', {
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
     },
   
     // Navigation arrows
@@ -19,3 +22,5 @@ var mySwiper = new Swiper('.swiper-container', {
     },
   
   })
+
+console.log("asdasd");

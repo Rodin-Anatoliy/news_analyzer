@@ -6,7 +6,8 @@
   <meta name="keywords" content="Новости, Анализ, Рейтинг, Топ">
   <meta name="author" content="Родин Анатолий">
   <meta name="description" content="Анализа происходящих в мире событий">
-  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+  <!--<link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">-->
+  <link rel="stylesheet" href="./pages/about.css">
   <link rel="shortcut icon" sizes="32x32" href="<%=require('./images/favicon.svg').default%>" type="image/x-icon">
   <title>Анализа происходящих в мире событий</title>
 </head>
@@ -72,7 +73,7 @@
             <h3 class="title title_github">История коммитов из GitHub</h3>
             <a class="github__link" href="#">Открыть в Github ></a>
         </div>
-        <div class="github__commits-bar swiper-wrapper" data-flickity='{ "groupCells": true }'>
+        <div class="github__commits-bar swiper-wrapper">
             <div class="commit swiper-slide">
                 <p class="commit__date">14 августа, 2019</p>
                 <div class="commit__author">
@@ -115,76 +116,6 @@
               </p>
             </div>
 
-            <div class="commit swiper-slide">
-              <p class="commit__date">14 августа, 2019</p>
-              <div class="commit__author">
-                  <img class="commit__photo" alt="photo" src="<%=require('./images/commit_1.jpg').default%>">
-                  <div class="commit__info">
-                      <p class="commit__name">Антон Долинин</p>
-                      <p class="commit__mail">anton@yandex.ru</p>
-                  </div>
-              </div>
-              <p class="commit__text">
-                Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
-              </p>
-            </div>
-
-            <div class="commit swiper-slide">
-              <p class="commit__date">14 августа, 2019</p>
-              <div class="commit__author">
-                  <img class="commit__photo" alt="photo" src="<%=require('./images/commit_1.jpg').default%>">
-                  <div class="commit__info">
-                      <p class="commit__name">Антон Долинин</p>
-                      <p class="commit__mail">anton@yandex.ru</p>
-                  </div>
-              </div>
-              <p class="commit__text">
-                Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
-              </p>
-            </div>
-
-          <div class="commit swiper-slide">
-            <p class="commit__date">14 августа, 2019</p>
-            <div class="commit__author">
-                <img class="commit__photo" alt="photo" src="<%=require('./images/commit_1.jpg').default%>">
-                <div class="commit__info">
-                    <p class="commit__name">Антон Долинин</p>
-                    <p class="commit__mail">anton@yandex.ru</p>
-                </div>
-            </div>
-            <p class="commit__text">
-              Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
-            </p>
-          </div>
-
-          <div class="commit swiper-slide">
-            <p class="commit__date">14 августа, 2019</p>
-            <div class="commit__author">
-                <img class="commit__photo" alt="photo" src="<%=require('./images/commit_1.jpg').default%>">
-                <div class="commit__info">
-                    <p class="commit__name">Антон Долинин</p>
-                    <p class="commit__mail">anton@yandex.ru</p>
-                </div>
-            </div>
-            <p class="commit__text">
-              Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
-            </p>
-          </div>
-
-          <div class="commit swiper-slide">
-            <p class="commit__date">14 августа, 2019</p>
-            <div class="commit__author">
-                <img class="commit__photo" alt="photo" src="<%=require('./images/commit_1.jpg').default%>">
-                <div class="commit__info">
-                    <p class="commit__name">Антон Долинин</p>
-                    <p class="commit__mail">anton@yandex.ru</p>
-                </div>
-            </div>
-            <p class="commit__text">
-              Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
-            </p>
-          </div>
-
         </div>
 
         <div class="swiper-pagination"></div>
@@ -211,7 +142,8 @@
         <li class="footer__social-item"><a class="footer__link" href="https://www.facebook.com/rodin.tolya/" target="_blank"><img class="footer__social-icons" alt="facebook" src="<%=require('./images/facebook.svg').default%>"></a></li>
     </footer>
 
-  <script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
+  <!--<script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>-->
+  <script type="module" src="./js/about.js"></script>
   
 </body>
 
