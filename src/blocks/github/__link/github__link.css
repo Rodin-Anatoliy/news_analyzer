@@ -6,4 +6,13 @@
     line-height: 24px;
     color: #1A1B22;
     text-decoration: none;
+    transition: transform linear .1s;
+}
+
+.github__link:hover{
+    transform: translateX(10px);
+}
+
+.github__link:active {
+    opacity: 0.5;
 }

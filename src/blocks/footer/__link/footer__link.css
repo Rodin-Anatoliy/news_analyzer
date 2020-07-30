@@ -9,4 +9,13 @@
     text-decoration: none;
     margin: 0;
     padding: 0;
+    transition: color linear .1s;
+}
+
+.footer__link:active {
+    opacity: 0.5;
+}
+
+.footer__link:hover {
+    color: #B6BCBF;
 }

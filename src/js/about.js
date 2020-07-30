@@ -1,5 +1,4 @@
-//import '../pages/about.css';
-//мешает работе live server VS Code
+import '../pages/about.css';
 
 import swiper from './swiper.js';
 

@@ -6,7 +6,7 @@
 @import url(./__title/card__title.css);
 
 .card {
-    background: #FFFFFF;
+    background: #FFF;
     max-width: 400px;
     border-radius: 20px;
     overflow: hidden;

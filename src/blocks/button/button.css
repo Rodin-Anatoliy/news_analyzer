@@ -7,4 +7,13 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
+    transition: background linear .1s;
 }
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button:focus {
+    outline: none;
+  }

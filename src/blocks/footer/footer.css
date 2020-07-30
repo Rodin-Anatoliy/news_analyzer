@@ -8,7 +8,7 @@
 .footer {
     display: flex;
     flex-direction: row;
-    background: #FFFFFF;
+    background: #FFF;
     justify-content: space-between;
     min-height: 80px;
     align-items: center;
