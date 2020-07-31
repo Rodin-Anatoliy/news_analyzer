@@ -2,6 +2,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 72px 0 64px 0;
+    margin: 0 0 64px 0;
     padding: 0 104px;
+}
+
+@media screen and (max-width: 768px) {
+    .github__head {
+        padding: 0 40px;
+        margin: 0 0 32px 0;
+    }
 }

@@ -4,3 +4,11 @@
     display: flex;
     justify-content: center;
 }
+
+
+
+@media screen and (max-width: 769px) {
+    .footer__menu-list{
+        margin-right: 68.77px;
+    }
+}

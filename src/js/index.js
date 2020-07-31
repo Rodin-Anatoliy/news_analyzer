@@ -1,4 +1,3 @@
-//import '../pages/index.css';
-// мешает работе live server
+import '../pages/index.css';
 
 

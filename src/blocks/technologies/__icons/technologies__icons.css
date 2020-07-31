@@ -1,5 +1,12 @@
 .technologies__icons {
     display: flex;
     flex-direction: row;
-    margin: 0 112px 0 178px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1034px) {
+    .technologies__icons {
+        margin: 40px 0 0 0;
+        justify-content: space-between;
+    }
 }

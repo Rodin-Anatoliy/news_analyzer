@@ -1,6 +1,14 @@
-@import url(./__paragraphs/for-clients__paragraphs.css);
+@import url(./__text/for-clients__text.css);
+@import url(./__paragraph/for-clients__paragraph.css);
 
 .for-clients {
     padding-top: 80px;
     padding-bottom: 94px;
+}
+
+@media screen and (max-width: 769px) {
+    .for-clients {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
 }

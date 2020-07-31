@@ -1,5 +1,10 @@
 .commit__photo {
     border-radius: 1000px;
     max-width: 64px;
-    max-height: 64px;
+}
+
+@media screen and (max-width: 769px) {
+    .commit__photo {
+        max-width: 48px;
+    }
 }

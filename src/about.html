@@ -6,8 +6,7 @@
   <meta name="keywords" content="Новости, Анализ, Рейтинг, Топ">
   <meta name="author" content="Родин Анатолий">
   <meta name="description" content="Анализа происходящих в мире событий">
-  <!--<link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">-->
-  <link rel="stylesheet" href="./pages/about.css">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
   <link rel="shortcut icon" sizes="32x32" href="<%=require('./images/favicon.svg').default%>" type="image/x-icon">
   <title>Анализа происходящих в мире событий</title>
 </head>
@@ -27,16 +26,14 @@
 
         <section class="for-clients root__section">
             <h3 class="title title_for-clients">Клиентам</h3>
-            <p class="for-clients__paragraphs">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему научился студент, какими технологиями владеет.
-
-                Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в проектах, выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.
-                
-                Карточки с новостями приходят с сервера и обрабатываются асинхронно. То есть сайт продолжает работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса.
-                
-                При создании проекта была использована сборка технологией Webpack. Это современный подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых браузерах. Даже если посетители — пользователи старых операционных систем, у них не будет проблем с отображением. А значит, потенциальная аудитория возрастает.
-                
-                Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы рекомендуем обратиться к этому студенту.</p>
-        </section>
+            <div class="for-clients__text">
+              <p class="for-clients__paragraph">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему научился студент, какими технологиями владеет.</p>
+              <p class="for-clients__paragraph">Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в проектах, выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.</p>
+              <p class="for-clients__paragraph">Карточки с новостями приходят с сервера и обрабатываются асинхронно. То есть сайт продолжает работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса.</p>
+              <p class="for-clients__paragraph">При создании проекта была использована сборка технологией Webpack. Это современный подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых браузерах. Даже если посетители — пользователи старых операционных систем, у них не будет проблем с отображением. А значит, потенциальная аудитория возрастает.</p>
+              <p class="for-clients__paragraph">Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы рекомендуем обратиться к этому студенту.</p>
+            </div>
+          </section>
 
         <section class="technologies root__section">
             <h3 class="title title_technologies">Используемые технологии</h3>
@@ -68,13 +65,28 @@
         </div>
       </section>
 
-      <section class="github swiper-container">
+      <section class="github">
         <div class="github__head">
             <h3 class="title title_github">История коммитов из GitHub</h3>
-            <a class="github__link" href="#">Открыть в Github ></a>
+            <a class="github__link" href="https://github.com/Rodin-Anatoliy/news_analyzer/commits/level-1" target="_blank">Открыть в Github ></a>
         </div>
-        <div class="github__commits-bar swiper-wrapper">
-            <div class="commit swiper-slide">
+        <div class="swiper-container">
+          <div class="github__commits-bar swiper-wrapper">
+              <div class="commit swiper-slide">
+                  <p class="commit__date">14 августа, 2019</p>
+                  <div class="commit__author">
+                      <img class="commit__photo" alt="photo" src="<%=require('./images/commit_1.jpg').default%>">
+                      <div class="commit__info">
+                          <p class="commit__name">Антон Долинин</p>
+                          <p class="commit__mail">anton@yandex.ru</p>
+                      </div>
+                  </div>
+                  <p class="commit__text">
+                    Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
+                  </p>
+              </div>
+
+              <div class="commit swiper-slide">
                 <p class="commit__date">14 августа, 2019</p>
                 <div class="commit__author">
                     <img class="commit__photo" alt="photo" src="<%=require('./images/commit_1.jpg').default%>">
@@ -86,44 +98,30 @@
                 <p class="commit__text">
                   Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
                 </p>
-            </div>
-
-            <div class="commit swiper-slide">
-              <p class="commit__date">14 августа, 2019</p>
-              <div class="commit__author">
-                  <img class="commit__photo" alt="photo" src="<%=require('./images/commit_1.jpg').default%>">
-                  <div class="commit__info">
-                      <p class="commit__name">Антон Долинин</p>
-                      <p class="commit__mail">anton@yandex.ru</p>
-                  </div>
               </div>
-              <p class="commit__text">
-                Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
-              </p>
-            </div>
-          
-            <div class="commit swiper-slide">
-              <p class="commit__date">14 августа, 2019</p>
-              <div class="commit__author">
-                  <img class="commit__photo" alt="photo" src="<%=require('./images/commit_1.jpg').default%>">
-                  <div class="commit__info">
-                      <p class="commit__name">Антон Долинин</p>
-                      <p class="commit__mail">anton@yandex.ru</p>
-                  </div>
+            
+              <div class="commit swiper-slide">
+                <p class="commit__date">14 августа, 2019</p>
+                <div class="commit__author">
+                    <img class="commit__photo" alt="photo" src="<%=require('./images/commit_1.jpg').default%>">
+                    <div class="commit__info">
+                        <p class="commit__name">Антон Долинин</p>
+                        <p class="commit__mail">anton@yandex.ru</p>
+                    </div>
+                </div>
+                <p class="commit__text">
+                  Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
+                </p>
               </div>
-              <p class="commit__text">
-                Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
-              </p>
-            </div>
 
+          </div>
+
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
-
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
       </section>
 
     </main>
@@ -142,8 +140,7 @@
         <li class="footer__social-item"><a class="footer__link" href="https://www.facebook.com/rodin.tolya/" target="_blank"><img class="footer__social-icons" alt="facebook" src="<%=require('./images/facebook.svg').default%>"></a></li>
     </footer>
 
-  <!--<script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>-->
-  <script type="module" src="./js/about.js"></script>
+  <script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 
 </html>
