@@ -1,6 +1,11 @@
 .author__photo {
     border-radius: 1000px;
-    max-width: 464px;
-    max-height: 464px;
-    margin: 80px 0;
+    width: 37.6623376%;
+
+}
+
+@media screen and (max-width: 769px) {
+    .author__photo {
+        width: 33.7209302%;
+    }
 }

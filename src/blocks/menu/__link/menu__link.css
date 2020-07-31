@@ -11,3 +11,9 @@
     text-decoration: none;
     transition: color linear .1s;
 }
+
+@media screen and (max-width: 769px) {
+    .menu__link {
+        line-height: 22px;
+    }
+}

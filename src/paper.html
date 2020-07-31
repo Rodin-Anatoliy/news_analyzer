@@ -6,7 +6,8 @@
   <meta name="keywords" content="Новости, Анализ, Рейтинг, Топ">
   <meta name="author" content="Родин Анатолий">
   <meta name="description" content="Анализа происходящих в мире событий">
-  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+  <!--<link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">-->
+  <link rel="stylesheet" href="./pages/paper.css">
   <link rel="shortcut icon" sizes="32x32" href="<%=require('./images/favicon.svg').default%>" type="image/x-icon">
   <title>Анализа происходящих в мире событий</title>
 </head>
@@ -91,7 +92,8 @@
         <li class="footer__social-item"><a class="footer__link" href="https://www.facebook.com/rodin.tolya/" target="_blank"><img class="footer__social-icons" alt="facebook" src="<%=require('./images/facebook.svg').default%>"></a></li>
     </footer>
 
-  <script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
+  <!--<script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>-->
+  <script type="module" src="./js/paper.js"></script>
 </body>
 
 </html>

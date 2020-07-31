@@ -5,3 +5,9 @@
     align-items: center;
     padding-bottom: 64px;
 }
+
+@media screen and (max-width: 769px) {
+    .founds__head {
+        padding-bottom: 32px;
+    }
+}

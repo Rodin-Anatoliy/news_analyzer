@@ -12,3 +12,9 @@
 .button_show-more:hover {
     background: #e8e8e9;
 }
+
+@media screen and (max-width: 769px) {
+    .button_show-more {
+        margin: 22px auto 0 auto;
+    }
+}

@@ -1,4 +1,5 @@
-import '../pages/about.css';
+// import '../pages/about.css';
+// мешает работе live server
 
 import swiper from './swiper.js';
 
@@ -21,5 +22,3 @@ var mySwiper = new Swiper('.swiper-container', {
     },
   
   })
-
-console.log("asdasd");

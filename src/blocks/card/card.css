@@ -4,10 +4,10 @@
 @import url(./__news-info/cars__news-info.css);
 @import url(./__source/card__source.css);
 @import url(./__title/card__title.css);
+@import url(./_hidden/card_hidden.css);
 
 .card {
     background: #FFF;
     max-width: 400px;
     border-radius: 20px;
-    overflow: hidden;
 }

@@ -13,3 +13,9 @@
     min-height: 80px;
     align-items: center;
 }
+
+@media screen and (max-width: 769px) {
+    .footer {
+        min-height: 64px
+    }
+}

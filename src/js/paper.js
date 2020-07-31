@@ -1,1 +1,2 @@
-import '../pages/paper.css';
+//import '../pages/paper.css';
+// мешает работе live server

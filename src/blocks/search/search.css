@@ -14,3 +14,10 @@
     width: 100%;
     padding-left: 24px;
 }
+
+@media screen and (max-width: 769px) {
+    .search {
+        min-height: 56px
+    }
+}
+
