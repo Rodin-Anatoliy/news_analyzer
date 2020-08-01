@@ -16,3 +16,10 @@
         line-height: 22px;
     }
 }
+
+@media screen and (max-width: 451px) {
+    .logo {
+        font-size: 16px;
+        margin: auto 0;
+    }
+  }

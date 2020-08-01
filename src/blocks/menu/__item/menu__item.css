@@ -5,7 +5,8 @@
     list-style-type: none;
     display: inline;
     padding: 0 0 26px 0;
-    margin: 28px 0 -1px 34px;
+    margin-top: 28px;
+    margin-left: 34px;
 
 }
 
@@ -17,5 +18,13 @@
     .menu__item {
         margin-top: 22px;
         padding-bottom: 18px;
+    }
+}
+
+@media screen and (max-width: 451px) {
+    .menu__item {
+        margin-top: 15px;
+        padding-bottom: 14px;
+        margin-left: 11px;
     }
 }

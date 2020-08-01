@@ -21,3 +21,11 @@
     }
 }
 
+@media screen and (max-width: 451px) {
+    .search {
+        background: none;
+        flex-direction: column;
+        border: none;
+        padding: 0;
+    }
+}

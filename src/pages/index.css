@@ -15,5 +15,6 @@
 @import url(../blocks/loading/loading.css);
 @import url(../blocks/news-cards/news-cards.css);
 @import url(../blocks/card/card.css);
+@import url(../blocks/card/_hidden/card_hidden.css);
 @import url(../blocks/author/author.css);
 @import url(../blocks/footer/footer.css);

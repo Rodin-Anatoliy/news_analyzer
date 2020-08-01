@@ -19,3 +19,9 @@
 .footer__link:hover {
     color: #B6BCBF;
 }
+
+@media screen and (max-width: 700px) {
+    .footer__link {
+        line-height: 48px;
+    }
+}

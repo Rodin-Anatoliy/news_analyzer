@@ -16,3 +16,9 @@
 .founds__link:hover {
     transform: translateX(10px);
 }
+
+@media screen and (max-width: 451px) {
+    .founds__link {
+        margin-top: 16.26px;
+    }
+}

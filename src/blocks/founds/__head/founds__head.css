@@ -11,3 +11,11 @@
         padding-bottom: 32px;
     }
 }
+
+@media screen and (max-width: 451px) {
+    .founds__head {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 36.86px;
+    }
+}

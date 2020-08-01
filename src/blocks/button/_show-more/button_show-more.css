@@ -4,6 +4,7 @@
     padding: 18px 80px 22px 80px;
     color: #1A1B22;
     max-width: 288px;
+    width: 100%;
     border: none;
     margin: 64px auto 0 auto;
     transform: background linear 1s;
@@ -16,5 +17,11 @@
 @media screen and (max-width: 769px) {
     .button_show-more {
         margin: 22px auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .button_show-more {
+        margin-top: 12.87px;
     }
 }

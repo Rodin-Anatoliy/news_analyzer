@@ -1,13 +1,4 @@
 .card__image {
-    object-fit: cover;
-    max-height: 272px;
-    max-width: 400px;
     border-radius: 20px 20px 0 0;
-}
-
-@media screen and (max-width: 769px) {
-    .card__image {
-        max-height: 150px;
-        max-width: 224px;
-    }
+    width: 100%;
 }

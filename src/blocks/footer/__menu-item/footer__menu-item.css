@@ -14,3 +14,12 @@
         margin: 0 25.12px 0 0;
     }
 }
+
+@media screen and (max-width: 700px) {
+    .footer__menu-item{
+        margin: 0 0 0 0;
+    }
+    .footer__menu-item:last-child {
+        margin: 0;
+    }
+}

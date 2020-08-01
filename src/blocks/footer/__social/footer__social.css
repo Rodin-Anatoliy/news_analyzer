@@ -4,3 +4,17 @@
     display: flex;
     justify-content: center;
 }
+
+@media screen and (max-width: 700px) {
+    .footer__social {
+        position: absolute;
+        right: 40px;
+        top: 22px;
+    }
+}
+
+@media screen and (max-width: 451px) {
+    .footer__social {
+        right: 16px;
+    }
+}

@@ -12,10 +12,18 @@
     justify-content: space-between;
     min-height: 80px;
     align-items: center;
+    position: relative;
 }
 
 @media screen and (max-width: 769px) {
     .footer {
         min-height: 64px
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer {
+        flex-direction: column-reverse;
+        align-items: flex-start;
     }
 }

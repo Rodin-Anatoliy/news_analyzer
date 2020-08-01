@@ -37,3 +37,15 @@
     color:#B6BCBF;
     opacity:1;
 }/* IE */
+
+@media screen and (max-width: 451px) {
+    .search__input {
+        width: 100%;
+        background: #FFFFFF;
+        border: 1px solid #D1D2D6;
+        border-radius: 100px;
+        min-height: 56px;
+        margin-bottom: 16px;
+        padding-left: 16px;
+    }
+}

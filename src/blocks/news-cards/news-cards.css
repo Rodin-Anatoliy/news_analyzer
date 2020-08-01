@@ -1,12 +1,21 @@
 .news-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 16px;
+    width: 100%;
 }
 
 @media screen and (max-width: 769px) {
     .news-cards {
         grid-gap: 8px;
         grid-template-rows: 1fr;
+    }
+}
+
+
+@media screen and (max-width: 690px) {
+    .news-cards {
+        grid-template-columns: auto;
     }
 }
