@@ -7,14 +7,17 @@
 
 @media screen and (max-width: 706px) {
     .footer__social {
-        position: absolute;
-        right: 40px;
-        top: 22px;
+        grid-row: 2;
+        grid-column: 2;
+        justify-self: end;
     }
 }
 
 @media screen and (max-width: 451px) {
     .footer__social {
-        right: 16px;
+        grid-row: 1;
+        grid-column: 2;
+        align-self: start;
+        padding-top: 20px;
     }
-} 
+}

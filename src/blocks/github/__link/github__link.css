@@ -9,7 +9,7 @@
     transition: transform linear .1s;
 }
 
-.github__link:hover{
+.github__link:hover {
     transform: translateX(10px);
 }
 

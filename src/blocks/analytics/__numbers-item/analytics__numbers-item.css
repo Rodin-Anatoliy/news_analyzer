@@ -1,6 +1,6 @@
-@import url(./__bold/analytics__news_bold.css);
+@import url(./_bold/analytics__numbers-item_bold.css);
 
-.analytics__news {
+.analytics__numbers-item {
     font-family: 'Roboto', Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -9,4 +9,5 @@
     color: #1A1B22;
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }

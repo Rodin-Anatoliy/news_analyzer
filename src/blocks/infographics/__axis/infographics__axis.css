@@ -1,6 +1,11 @@
 .infographics__axis {
     display: flex;
     flex-direction: row;
-    margin-left: 140px;
-    justify-content: space-between;
+    width: 100%;
+}
+
+@media screen and (max-width: 451px) {
+    .infographics__axis {
+        display: none;
+    }
 }

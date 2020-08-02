@@ -12,9 +12,10 @@
 </head>
 <body class="root">
 
+  <!--Хедер-->
   <header class="header header_light">
     <nav class="menu menu_light root__section">
-      <p class="logo logo_light">NewsAnalyzer</p>
+      <a class="logo logo_light" href="./index.html">NewsAnalyzer</a>
       <ul class="menu__list">
         <li class="menu__item"><a class="menu__link menu__link_light" href="./index.html">Главная</a></li>
         <li class="menu__item"><a class="menu__link menu__link_light" href="./about.html">О проекте</a></li>
@@ -24,59 +25,67 @@
 
     <main class="content">
 
+      <!--Секция аналитики в цифрах-->
       <section class="analytics root__section">
-        <p class="analytics__site-page">Главная <span class="analytics__site-page analytics__site-page_grey">/ Аналитика</span></p>
+        <p class="analytics__site-page"><a class="analytics__link" href="./index.html">Главная </a><a class="analytics__site-page analytics__site-page_grey analytics__link" href="./paper.html">/ Аналитика</a></p>
         <h3 class="title title_analytics">Вы спросили: «Путешествия»</h3>
-        <div class="analytics__numbers">
-            <p class="analytics__news">Новостей за неделю: <span class="analytics__news analytics__news_bold">34 324</span></p>
-            <p class="analytics__news">Упоминаний в загаловках: <span class="analytics__news analytics__news_bold">235</span></p>
-        </div>
+        <ul class="analytics__numbers">
+          <li class="analytics__numbers-item">Новостей за неделю: <span class="analytics__numbers-item analytics__numbers-item_bold">34 324</span></li>
+          <li class="analytics__numbers-item">Упоминаний в загаловках: <span class="analytics__numbers-item analytics__numbers-item_bold">235</span></li>
+        </ul>
       </section>
 
+      <!--Начало секции с графиком-->
       <section class="infographics root__section">
         <h3 class="title title_infographics">Аналитика по дням</h3>
         <div class="infographics__diagram">
           <div class="infographics__diagram-head">
-            <p class="infographics__date">Дата (август)</p>
-            <p class="infographics__references">Кол-во упоминаний</p>
+            <p class="infographics__diagram-head-date">Дата (август)</p>
+            <p class="infographics__diagram-head-references">Кол-во упоминаний</p>
           </div>
-          <div class="infographics__axis">
-            <p class="infographics__axis-numbers">0</p>
-            <p class="infographics__axis-numbers">25</p>
-            <p class="infographics__axis-numbers">50</p>
-            <p class="infographics__axis-numbers">100</p>
-          </div>
-          <div class="infographics__chart">
-            <div class="infographics__calendar-dates">
-              <p class="infographics__day">19, пн</p>
-              <p class="infographics__day">20, вт</p>
-              <p class="infographics__day">21, ср</p>
-              <p class="infographics__day">22, чт</p>
-              <p class="infographics__day">23, пт</p>
-              <p class="infographics__day">24, сб</p>
-              <p class="infographics__day">25, вс</p>
+          <div class="infographics__diagram-body">
+            <div class="infographics__axis">
+              <p class="infographics__axis-numbers">0</p>
+              <p class="infographics__axis-numbers">25</p>
+              <p class="infographics__axis-numbers">50</p>
+              <p class="infographics__axis-numbers">75</p>
+              <p class="infographics__axis-numbers">100</p>
             </div>
-            <div class="infographics__colums">
-              <div class="infographics__column infographics__column_one">15</div>
-              <div class="infographics__column infographics__column_two">18</div>
-              <div class="infographics__column infographics__column_three">11</div>
-              <div class="infographics__column infographics__column_four">39</div>
-              <div class="infographics__column infographics__column_five">45</div>
-              <div class="infographics__column infographics__column_six">73</div>
-              <div class="infographics__column infographics__column_seven">34</div>
+            <div class="infographics__chart">
+              <div class="infographics__chart-dates">
+                <p class="infographics__day">19, пн</p>
+                <p class="infographics__day">20, вт</p>
+                <p class="infographics__day">21, ср</p>
+                <p class="infographics__day">22, чт</p>
+                <p class="infographics__day">23, пт</p>
+                <p class="infographics__day">24, сб</p>
+                <p class="infographics__day">25, вс</p>
+              </div>
+              <div class="infographics__colums">
+                <div class="infographics__column" style="width: 15%;">15</div> <!--Стиль временно выведен сюда для упрощения, в дальнейшем будет работа через js-->
+                <div class="infographics__column" style="width: 18%;">18</div> <!--Стили вынесены с разрешения диломного руководителя Иванова Максима-->
+                <div class="infographics__column" style="width: 11%;">11</div>
+                <div class="infographics__column" style="width: 39%;">39</div>
+                <div class="infographics__column" style="width: 45%;">45</div>
+                <div class="infographics__column" style="width: 73%;">73</div> 
+                <div class="infographics__column" style="width: 34%;">34</div>
+              </div>
             </div>
-          </div>
-          <div class="infographics__axis">
-            <p class="infographics__axis-numbers">0</p>
-            <p class="infographics__axis-numbers">25</p>
-            <p class="infographics__axis-numbers">50</p>
-            <p class="infographics__axis-numbers">100</p>
+            <div class="infographics__axis">
+              <p class="infographics__axis-numbers">0</p>
+              <p class="infographics__axis-numbers">25</p>
+              <p class="infographics__axis-numbers">50</p>
+              <p class="infographics__axis-numbers">75</p>
+              <p class="infographics__axis-numbers">100</p>
+            </div>
           </div>
         </div>
       </section>
+      <!--Конец секции с графиком-->
 
     </main>
 
+    <!--Футер-->
     <footer class="footer root__section">
       <p class="footer__copyright">© 2019  Supersite</p>
       <nav class="footer__menu">
@@ -89,6 +98,7 @@
       <ul class="footer__social">
         <li class="footer__social-item"><a class="footer__link" href="https://github.com/Rodin-Anatoliy/" target="_blank"><img class="footer__social-icons" alt="github" src="<%=require('./images/github.svg').default%>"></a></li>
         <li class="footer__social-item"><a class="footer__link" href="https://www.facebook.com/rodin.tolya/" target="_blank"><img class="footer__social-icons" alt="facebook" src="<%=require('./images/facebook.svg').default%>"></a></li>
+      </ul>
     </footer>
 
   <script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>

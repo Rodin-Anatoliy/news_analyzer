@@ -4,6 +4,7 @@
 @import url(./__menu-list/footer__menu-list.css);
 @import url(./__social-item/footer__social-item.css);
 @import url(./__social/footer__social.css);
+@import url(./__menu/footer__menu.css);
 
 .footer {
     display: flex;
@@ -22,7 +23,6 @@
     justify-content: space-between;
     min-height: 80px;
     align-items: center;
-    position: relative;
 }
 
 @media screen and (max-width: 769px) {
@@ -33,7 +33,13 @@
 
 @media screen and (max-width: 700px) {
     .footer {
-        flex-direction: column-reverse;
-        align-items: flex-start;
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 451px) {
+    .footer {
+        grid-template: auto 1fr / auto auto;
     }
 }

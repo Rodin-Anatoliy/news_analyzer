@@ -1,4 +1,4 @@
-.infographics__date {
+.infographics__diagram-head-references {
     font-family: 'Roboto', Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -7,5 +7,12 @@
     letter-spacing: 0.4px;
     text-transform: uppercase;
     color: #B6BCBF;
-    max-width: 80px;
+    width: calc(100% - 104px);
+    margin: 0;
+}
+
+@media screen and (max-width: 451px) {
+    .infographics__diagram-head-references {
+        width: calc(100% - 80px);
+    }
 }
