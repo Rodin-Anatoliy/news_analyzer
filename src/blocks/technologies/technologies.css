@@ -18,3 +18,10 @@
         padding-bottom: 49px;
     }
 }
+
+@media screen and (max-width: 451px) {
+    .technologies {
+        padding-top: 32px;
+        padding-bottom: 42px;
+    }
+}

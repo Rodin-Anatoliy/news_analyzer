@@ -11,4 +11,11 @@
         margin: auto;
         justify-content: space-between;
     }
+    .technologies__block:first-child {
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
 }

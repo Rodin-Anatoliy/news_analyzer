@@ -15,6 +15,16 @@
     position: relative;
 }
 
+.footer {
+    display: flex;
+    flex-direction: row;
+    background: #FFF;
+    justify-content: space-between;
+    min-height: 80px;
+    align-items: center;
+    position: relative;
+}
+
 @media screen and (max-width: 769px) {
     .footer {
         min-height: 64px

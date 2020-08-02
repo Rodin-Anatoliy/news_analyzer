@@ -3,6 +3,7 @@
     margin: 0;
     display: flex;
     justify-content: center;
+
 }
 
 
@@ -13,10 +14,15 @@
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 730px) {
+    .footer__menu-list{
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 706px) {
     .footer__menu-list{
         margin: 17px 0 19px 0;
         flex-direction: column;
-        
     }
 }

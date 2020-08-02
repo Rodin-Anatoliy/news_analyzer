@@ -16,3 +16,9 @@
 .github__link:active {
     opacity: 0.5;
 }
+
+@media screen and (max-width: 451px) {
+    .github__link {
+        display: none;
+    }
+}

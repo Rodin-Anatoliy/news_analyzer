@@ -230,6 +230,12 @@
   }
 }
 
+@media screen and (max-width: 451px) {
+  .swiper-pagination {
+    margin-top: 16px;
+  }
+}
+
 .swiper-pagination.swiper-pagination-hidden {
   opacity: 0;
 }

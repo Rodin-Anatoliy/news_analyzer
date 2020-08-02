@@ -5,7 +5,7 @@ import swiper from './swiper.js';
 
 var mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
-    slidesPerView: 3.6,
+    slidesPerView: 1,
     loop: true,
   
     // If we need pagination

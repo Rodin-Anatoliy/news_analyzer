@@ -11,3 +11,9 @@
         max-width: 336px;
     }
 }
+
+@media screen and (max-width: 451px) {
+    .title_github {
+        max-width: 200px;
+    }
+}

@@ -16,6 +16,7 @@
 
 @media screen and (max-width: 690px) {
     .news-cards {
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
+        place-items: center;
     }
 }
