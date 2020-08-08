@@ -13,6 +13,12 @@
     width: calc(100% - 168px);
 }
 
+.search__input:focus::-moz-placeholder {
+    color: transparent;
+}
+.search__input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
 
 .search__input::-webkit-search-cancel-button { 
     display: none;
