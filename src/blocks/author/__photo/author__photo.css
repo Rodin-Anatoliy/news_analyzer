@@ -1,4 +1,6 @@
 .author__photo {
+    object-fit: cover;
+    object-position: center;
     border-radius: 1000px;
     width: 37.6623376%;
 
