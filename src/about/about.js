@@ -3,6 +3,7 @@ import {CommitCard} from '../js/components/CommitCard';
 import {CardList} from '../js/components/CardList'
 import {GithubApi} from '../js/modules/GithubApi';
 import {DataStorage} from '../js/modules/DataStorage';
+import {constants} from '../js/constants';
 
 import swiper from '../js/swiper.js';
 
@@ -24,15 +25,18 @@ var mySwiper = new Swiper('.swiper-container', {
     },
 })
 
+const createCommitCard = (obj) => new CommitCard(obj).create();
+const commitCardList = new CardList(constants.commitsContainer, createCommitCard);
 const commitsStorage = new DataStorage('local_commits');
 const githubApi = new GithubApi();
 githubApi.getCommits()
 .then(data => {
     commitsStorage.saveData(data);
+})
+.then(() => {
+  const commitsData = commitsStorage.getData().slice(-20);
+  
+  commitCardList.render(commitsData);
 });
 
-const commitsData = commitsStorage.getData().slice(-20);
-const createCommitCard = (obj) => new CommitCard(obj).create();
-const commitsContainer = document.querySelector('.github__commits-bar');
-const commitCardList = new CardList(commitsContainer, createCommitCard);
-commitCardList.render(commitsData);
+
