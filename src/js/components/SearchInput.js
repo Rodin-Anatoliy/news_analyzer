@@ -1,5 +1,5 @@
-export function searchInput(event, constants, newsApi, newsStorage, showMore, newsCardList) {
-    //перенести функционал из слушателя сабмита в отдельную функцию
+export function searchInput(event, constants, newsApi, articlesStorage, showMore, newsCardList) {
+
     event.preventDefault();
 
     if (constants.searchForm.elements[0].value) {
@@ -9,17 +9,20 @@ export function searchInput(event, constants, newsApi, newsStorage, showMore, ne
         constants.notFound.style.display = 'none';
         constants.newsContainer.innerHTML = '';
         constants.error.style.display = 'none';
+        articlesStorage.addIput(constants.searchForm.elements[0].value);
 
-        newsApi.getNews(constants.searchForm.elements[0].value)
+        newsApi.getNews(constants.searchForm.elements[0].value, 6, 0, constants)
         .then(data => {
-            newsStorage.saveData(data.articles);
+            articlesStorage.saveData(data.articles);
         })
         .then(() => {
-            showMore(newsCardList, newsStorage);
+            if (articlesStorage.getData()[0]) {
+                showMore(newsCardList, articlesStorage);
+            };
         })
         .then(() => {
             constants.loader.style.display = 'none';
-            if (newsStorage.getData()[0]) {
+            if (articlesStorage.getData()[0]) {
                 constants.founds.style.display = 'flex';
             } else {constants.notFound.style.display = 'flex'};  
         });

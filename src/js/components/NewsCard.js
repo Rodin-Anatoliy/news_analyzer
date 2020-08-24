@@ -5,7 +5,7 @@ export class NewsCard {
     }
 
     template() {
-        const templateString = `<div class="card">
+        const templateString = `<a class="card" href="" target="_blank">
             <img class="card__image" src="" alt="image"> 
             <div class="card__news-info">
                 <p class="card__date"></p>
@@ -13,10 +13,16 @@ export class NewsCard {
                 <p class="card__description"></p>
                 <p class="card__source"></p>
             </div>
-        </div>`;
+        </a>`;
         const elem = document.createElement('div');
         elem.insertAdjacentHTML('beforeend', templateString.trim());
         return elem.firstChild;
+    }
+
+    _setHandlers = () => {
+        this.card.addEventListener('click', () => {
+
+        })
     }
 
     create() {
@@ -24,6 +30,7 @@ export class NewsCard {
         const date = new Date(this.news.publishedAt);
         if (!this.news.urlToImage) {this.news.urlToImage = require('../../images/news_image.jpg').default;}
         this.card = this.template();
+        this.card.href = this.news.url;
         this.card.querySelector('.card__image').src = this.news.urlToImage;
         this.card.querySelector('.card__date').textContent = `${date.getDate()} ${months[date.getMonth()]}, ${date.getFullYear()}`;
         this.card.querySelector('.card__title').textContent = this.news.title;

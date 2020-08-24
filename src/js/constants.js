@@ -8,4 +8,13 @@ export const constants = {
     notFound: document.querySelector('.not-found'),
     error: document.querySelector('.header__error'),
     commitsContainer: document.querySelector('.github__commits-bar'),
+    titleAnalytics: document.querySelector('.title_analytics'),
+    errorApi: document.querySelector('.error'),
+    errorApiText: document.querySelector('.error__text'),
+    analyticsNumbers: document.querySelectorAll('.analytics__numbers-item_bold'),
+    daysWeek: document.querySelectorAll('.infographics__day'),
+    daysAccordance: document.querySelectorAll('.infographics__column'),
+    week: ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'],
+    graphicMonth: document.querySelector('.infographics__diagram-head-date'),
+    months: ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь'],
 };
