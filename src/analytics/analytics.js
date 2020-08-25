@@ -16,10 +16,10 @@ newsApi.getNews(localStorage.getItem('input'))
 })
 .then(() => {
     constants.analyticsNumbers[0].textContent = newsStorage.getData().totalResults;
-    constants.analyticsNumbers[1].textContent = Math.floor(accordance(newsStorage.getData().articles, input, 'title') * 0.01 * newsStorage.getData().totalResults);
+    constants.analyticsNumbers[1].textContent = Math.ceil(accordance(newsStorage.getData().articles, input, 'title') * 0.01 * newsStorage.getData().totalResults);
     constants.titleAnalytics.textContent = `Вы спросили: «${localStorage.getItem('input')}»`;
 
-    return Math.floor(accordance(newsStorage.getData().articles, input, 'title', 'description') * 0.01 * newsStorage.getData().totalResults);
+    return Math.ceil(accordance(newsStorage.getData().articles, input, 'title', 'description') * 0.01 * newsStorage.getData().totalResults);
 })
 .then((totalAccordance) => {
     for (let i = 0; i < 7; i++) {
@@ -27,8 +27,8 @@ newsApi.getNews(localStorage.getItem('input'))
         constants.daysWeek[6 - i].textContent = `${day.getDate()}, ${constants.week[day.getDay()]}`;
         newsApi.getNews(localStorage.getItem('input'), i, i)
         .then((data) => {
-            constants.daysAccordance[6 - i].textContent = Math.floor(accordance(data.articles, input, 'title') * 0.01 * data.totalResults);
-            constants.daysAccordance[6 - i].style.width = `${Math.floor((accordance(data.articles, input, 'title') * 0.01 * data.totalResults) / totalAccordance * 100)}%`;
+            constants.daysAccordance[6 - i].textContent = Math.ceil(accordance(data.articles, input, 'title') * 0.01 * data.totalResults);
+            constants.daysAccordance[6 - i].style.width = `${Math.ceil((accordance(data.articles, input, 'title') * 0.01 * data.totalResults) / totalAccordance * 100)}%`;
         });
     
     }
