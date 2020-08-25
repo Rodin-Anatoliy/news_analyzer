@@ -6,7 +6,7 @@ import {constants} from '../js/constants';
 import {accordance} from '../js/utils/accordance';
 
 const newsStorage = new DataStorage('local_news_info');
-const newsApi = new NewsApi();
+const newsApi = new NewsApi(constants.url, constants.key);
 const today = new Date();
 const input = localStorage.getItem('input');
 
@@ -33,4 +33,9 @@ newsApi.getNews(localStorage.getItem('input'))
     
     }
     constants.graphicMonth.textContent = `дата (${constants.months[today.getMonth()]})`;
+})
+.catch(error => {
+    constants.loader.style.display = 'none';
+    constants.errorApi.style.display = 'flex';
+    console.log(error);
 });

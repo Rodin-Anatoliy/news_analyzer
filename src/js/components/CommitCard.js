@@ -24,13 +24,13 @@ export class CommitCard {
     create() {
         const months = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь'];
         const date = new Date(this.cardInfo.commit.committer.date);
-        let avatar_url = 'https://avatars3.githubusercontent.com/u/52788323?v=4';
+        let avatarUrl = 'https://avatars3.githubusercontent.com/u/52788323?v=4';
         if (this.cardInfo.author) {
-          avatar_url = this.cardInfo.author.avatar_url;
+          avatarUrl = this.cardInfo.author.avatar_url;
         }
         this.card = this.template();
         this.card.querySelector('.commit__date').textContent = `${date.getUTCDate()} ${months[date.getMonth()]}, ${date.getFullYear()}`;
-        this.card.querySelector('.commit__photo').src = avatar_url;
+        this.card.querySelector('.commit__photo').src = avatarUrl;
         this.card.querySelector('.commit__name').textContent = this.cardInfo.commit.committer.name;
         this.card.querySelector('.commit__mail').textContent = this.cardInfo.commit.committer.email;
         this.card.querySelector('.commit__text').textContent = this.cardInfo.commit.message;

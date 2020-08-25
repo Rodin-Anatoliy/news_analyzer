@@ -7,7 +7,7 @@ import {constants} from '../js/constants';
 
 import swiper from '../js/swiper.js';
 
-var mySwiper = new Swiper('.swiper-container', {
+const mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
     slidesPerView: 1,
     loop: true,
@@ -37,6 +37,11 @@ githubApi.getCommits()
   const commitsData = commitsStorage.getData().slice(-20);
   
   commitCardList.render(commitsData);
+})
+.catch(error => {
+  constants.loader.style.display = 'none';
+  constants.errorApi.style.display = 'flex';
+  console.log(error);
 });
 
 

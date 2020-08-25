@@ -6,7 +6,6 @@ export class GithubApi {
                 return res.json();
             }
             return Promise.reject(console.log(`Ошибка: ${res.status}`));
-        })
-        .catch(error => console.log(error));
+        });
     }
 }

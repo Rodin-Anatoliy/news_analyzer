@@ -17,4 +17,6 @@ export const constants = {
     week: ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'],
     graphicMonth: document.querySelector('.infographics__diagram-head-date'),
     months: ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь'],
+    url: 'https://nomoreparties.co/news/v2/',
+    key: '2356832b0876432c8814987efd07620a',
 };
