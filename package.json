@@ -15,7 +15,7 @@
   "author": "Anatoliy Rodin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Rodin-Anatoliy/wnews_analyzer/issues"
+    "url": "https://github.com/Rodin-Anatoliy/news_analyzer/issues"
   },
   "homepage": "https://github.com/Rodin-Anatoliy/news_analyzer#readme",
   "devDependencies": {

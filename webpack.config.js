@@ -8,9 +8,9 @@ const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
     entry: {
-        index: './src/js/index.js',
-        about: './src/js/about.js',
-        paper: './src/js/paper.js',
+        index: './src/index.js',
+        about: './src/about/about.js',
+        analytics: './src/analytics/analytics.js',
       },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -102,15 +102,15 @@ module.exports = {
           }),
         new HtmlWebpackPlugin({
             inject: false,
-            template: './src/about.html',
+            template: './src/about/about.html',
             filename: 'about.html',
             chunks: ['about'],
         }),
         new HtmlWebpackPlugin({
             inject: false,
-            template: './src/paper.html',
-            filename: 'paper.html',
-            chunks: ['paper'],
+            template: './src/analytics/analytics.html',
+            filename: 'analytics.html',
+            chunks: ['analytics'],
         }),
         new webpack.DefinePlugin({
             'NODE_ENV': JSON.stringify(process.env.NODE_ENV)

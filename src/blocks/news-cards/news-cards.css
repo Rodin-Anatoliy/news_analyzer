@@ -1,4 +1,10 @@
 .news-cards {
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+
+/* .news-cards {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: 1fr 1fr;
@@ -12,11 +18,11 @@
         grid-template-rows: 1fr;
     }
 }
+*/
 
-
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 536px) {
     .news-cards {
-        grid-template-columns: 1fr;
-        place-items: center;
+        flex-direction: column;
+        align-items: center;
     }
 }
