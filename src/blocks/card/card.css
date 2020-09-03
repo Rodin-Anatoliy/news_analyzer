@@ -17,6 +17,27 @@
     height: auto;
     margin-right: 16px;
     text-decoration: none;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    animation-duration: 0.55s;  
+    animation-fill-mode: both;
+    animation-name: cardView;
+}
+
+@keyframes cardView { 
+    0% {               
+        opacity: 0;
+        transform: translate3d(0px, -100%, 0px);
+    }
+    100% {             
+        opacity: 1;
+        transform: none;
+    }
+} 
+
+.card:hover {
+    -webkit-box-shadow: 0 0px 6px rgba(0, 0, 0, .3);
+    box-shadow: 0 0px 6px rgba(0, 0, 0, .3);
 }
 
 .card:nth-child(1), .card:nth-child(2), .card:nth-child(3) {

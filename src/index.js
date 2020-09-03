@@ -8,12 +8,12 @@ import {searchInput} from './js/components/SearchInput';
 import {showMore} from './js/utils/showMore';
 
 const articlesStorage = new DataStorage('local_articles');
-const newsApi = new NewsApi(constants.url, constants.key);
+const newsApi = new NewsApi(constants);
 const createNewsCard = (obj) => new NewsCard(obj).create();
 const newsCardList = new CardList(constants.newsContainer, createNewsCard);
 
-if (localStorage.getItem('input')) {
-    constants.searchForm.elements[0].value = localStorage.getItem('input');
+if (sessionStorage.getItem('input')) {
+    constants.searchForm.elements[0].value = sessionStorage.getItem('input');
     searchInput('', constants, newsApi, articlesStorage, showMore, newsCardList);
 }
 

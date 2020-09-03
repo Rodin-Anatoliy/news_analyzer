@@ -10,6 +10,7 @@ export function searchInput(event, constants, newsApi, articlesStorage, showMore
         constants.notFound.style.display = 'none';
         constants.newsContainer.innerHTML = '';
         constants.error.style.display = 'none';
+        constants.errorApi.style.display = 'none';
         constants.searchForm.elements[0].disabled = 1;
         constants.searchForm.elements[1].disabled = 1;
         constants.searchForm.style.opacity = 0.8;
@@ -37,6 +38,9 @@ export function searchInput(event, constants, newsApi, articlesStorage, showMore
             constants.loader.style.display = 'none';
             constants.errorApi.style.display = 'flex';
             console.log(error);
+            constants.searchForm.elements[0].disabled = 0;
+            constants.searchForm.elements[1].disabled = 0;
+            constants.searchForm.style.opacity = 1;
         });
     } else {
         constants.error.style.display = 'flex';

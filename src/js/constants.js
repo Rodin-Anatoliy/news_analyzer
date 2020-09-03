@@ -1,4 +1,5 @@
 export const constants = {
+    language: 'ru',
     searchForm: document.querySelector('.search'),
     newsContainer: document.querySelector('.news-cards'),
     buttonShowMore: document.querySelector('.button_show-more'),
@@ -6,7 +7,7 @@ export const constants = {
     loader: document.querySelector('.loading'),
     founds: document.querySelector('.founds'),
     notFound: document.querySelector('.not-found'),
-    error: document.querySelector('.header__error'),
+    error: document.querySelector('.search__error'),
     commitsContainer: document.querySelector('.github__commits-bar'),
     titleAnalytics: document.querySelector('.title_analytics'),
     errorApi: document.querySelector('.error'),

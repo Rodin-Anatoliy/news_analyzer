@@ -4,15 +4,15 @@ export class DataStorage {
     }
 
     saveData(data) {
-        localStorage.removeItem(this.itemName);
-        localStorage.setItem(this.itemName, JSON.stringify(data));
+        sessionStorage.removeItem(this.itemName);
+        sessionStorage.setItem(this.itemName, JSON.stringify(data));
     }
 
     addIput(input) {
-        localStorage.setItem('input', input);
+        sessionStorage.setItem('input', input);
     }
 
     getData() {
-        return JSON.parse(localStorage.getItem(this.itemName));
+        return JSON.parse(sessionStorage.getItem(this.itemName));
     }
 }
