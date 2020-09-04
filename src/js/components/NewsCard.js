@@ -5,7 +5,8 @@ export class NewsCard {
     }
 
     template() {
-        const templateString = `<a class="card" href="" target="_blank">
+        const templateString = `<a class="card card_emergence" href="" target="_blank">
+        <div class="card__wrapper">
             <img class="card__image" src="" alt="image"> 
             <div class="card__news-info">
                 <p class="card__date"></p>
@@ -13,7 +14,8 @@ export class NewsCard {
                 <p class="card__description"></p>
                 <p class="card__source"></p>
             </div>
-        </a>`;
+        </div>
+    </a>`;
         const elem = document.createElement('div');
         elem.insertAdjacentHTML('beforeend', templateString.trim());
         return elem.firstChild;

@@ -8,6 +8,11 @@
     border: none;
     margin: 64px auto 0 auto;
     transform: background linear 1s;
+    box-shadow: 0 10px 10px 0px rgba(221, 221, 221, 1);
+}
+
+.button_show-more:active {
+    opacity: 0.5;
 }
 
 .button_show-more:hover {

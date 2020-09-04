@@ -7,8 +7,12 @@
     color: #1A1B22;
     margin: 0 0 18px 0;
     padding: 0;
-    overflow: hidden;
     max-height: 110px;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
+    word-wrap: break-word;
    
 }
 

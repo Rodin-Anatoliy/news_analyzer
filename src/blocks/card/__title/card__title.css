@@ -8,6 +8,11 @@
     margin: 0 0 12px 0;
     padding: 0;
     width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow-y: hidden;
+    word-wrap: break-word;
 }
 
 @media screen and (max-width: 1033px) {

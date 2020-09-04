@@ -9,7 +9,7 @@ export const constants = {
     notFound: document.querySelector('.not-found'),
     error: document.querySelector('.search__error'),
     commitsContainer: document.querySelector('.github__commits-bar'),
-    titleAnalytics: document.querySelector('.title_analytics'),
+    titleAnalytics: document.querySelector('.querry'),
     errorApi: document.querySelector('.error'),
     errorApiText: document.querySelector('.error__text'),
     analyticsNumbers: document.querySelectorAll('.analytics__numbers-item_bold'),
