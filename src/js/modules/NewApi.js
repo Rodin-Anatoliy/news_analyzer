@@ -9,7 +9,7 @@ export class NewsApi {
         const today = new Date();
         const dateTo = new Date(Date.parse(today) - dayTo * 86400000);
         const dateFrom = new Date(Date.parse(today) - dayFrom * 86400000);
-        return fetch(`${this.url}everything?q=${query}&language=${this.language}&from=${dateTo.getFullYear()}-${dateTo.getMonth() + 1}-${dateTo.getDate()}&to=${dateFrom.getFullYear()}-${dateFrom.getMonth() + 1}-${dateFrom.getDate()}&pageSize=100&apiKey=${this.key}`)
+        return fetch(`${this.url}everything?language=${this.language}&q=${query}&from=${dateTo.getFullYear()}-${dateTo.getMonth() + 1}-${dateTo.getDate()}&to=${dateFrom.getFullYear()}-${dateFrom.getMonth() + 1}-${dateFrom.getDate()}&sortBy=publishedA&pageSize=100&apiKey=${this.key}`)
         .then(res => {
             if (res.ok) {
                 return res.json();
