@@ -9,8 +9,10 @@ import swiper from '../js/swiper.js';
 
 const mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
-    slidesPerView: 1,
-    loop: true,
+    slidesPerView: "auto",
+    spaceBetween: 16,
+    initialSlide: 0,
+    //loop: true,
   
     // If we need pagination
     pagination: {
@@ -23,6 +25,8 @@ const mySwiper = new Swiper('.swiper-container', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+
+    observer: true,
 })
 
 const createCommitCard = (obj) => new CommitCard(obj).create();
