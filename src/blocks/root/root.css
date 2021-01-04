@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 0 calc(50% - 720px);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
