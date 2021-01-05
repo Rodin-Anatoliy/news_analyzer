@@ -1,9 +1,9 @@
 import './analytics.css';
 
-import {NewsApi} from '../js/modules/NewApi';
-import {DataStorage} from '../js/modules/DataStorage';
-import {constants} from '../js/constants';
-import {accordance} from '../js/utils/accordance';
+import {NewsApi} from '../../js/modules/NewApi';
+import {DataStorage} from '../../js/modules/DataStorage';
+import {constants} from '../../js/constants';
+import {accordance} from '../../js/utils/accordance';
 
 const newsStorage = new DataStorage('local_news_info');
 const newsApi = new NewsApi(constants);

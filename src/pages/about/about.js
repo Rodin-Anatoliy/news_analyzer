@@ -1,11 +1,11 @@
 import './about.css';
-import {CommitCard} from '../js/components/CommitCard';
-import {CardList} from '../js/components/CardList'
-import {GithubApi} from '../js/modules/GithubApi';
-import {DataStorage} from '../js/modules/DataStorage';
-import {constants} from '../js/constants';
+import {CommitCard} from '../../js/components/CommitCard';
+import {CardList} from '../../js/components/CardList'
+import {GithubApi} from '../../js/modules/GithubApi';
+import {DataStorage} from '../../js/modules/DataStorage';
+import {constants} from '../../js/constants';
 
-import swiper from '../js/swiper.js';
+import swiper from '../../js/swiper.js';
 
 const mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
