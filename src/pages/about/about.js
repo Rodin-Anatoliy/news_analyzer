@@ -38,7 +38,7 @@ githubApi.getCommits()
     commitsStorage.saveData(data);
 })
 .then(() => {
-  const commitsData = commitsStorage.getData().slice(-20);
+  const commitsData = commitsStorage.getData().slice(0, 20);
   
   commitCardList.render(commitsData);
 })
