@@ -88,4 +88,6 @@ path.
 3. Для получения production (prod mode) версии проекта в директории проекта, выполнить:
     ```npm run build```
 4. Созданная папка **dist** является production версией проекта
-![Code example](./src/images/github.svg "Code example")​
+![Code example](https://bitbucket.org/cupcakedev/cupcake-injection-npm/src/master/images/code_example.png "Code example")​  
+![Page example 1](https://bitbucket.org/cupcakedev/cupcake-injection-npm/src/master/images/page_example_1.png "Page example 1")​  
+![page example 1](https://bitbucket.org/cupcakedev/cupcake-injection-npm/src/master/images/page_example_2.png "page example 2")​  
