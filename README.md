@@ -88,5 +88,3 @@ path.
 3. Для получения production (prod mode) версии проекта в директории проекта, выполнить:
     ```npm run build```
 4. Созданная папка **dist** является production версией проекта
-
-![alt tag](./src/images/github.svg "Описание будет тут")​
