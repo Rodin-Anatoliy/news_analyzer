@@ -89,6 +89,6 @@ path.
     ```npm run build```
 4. Созданная папка **dist** является production версией проекта  
 
-![Code example](https://bitbucket.org/cupcakedev/cupcake-injection-npm/raw/master/images/code_example.png)​  
-![Page example 1](https://bitbucket.org/cupcakedev/cupcake-injection-npm/src/master/images/page_example_1.png "Page example 1")​  
-![page example 1](https://bitbucket.org/cupcakedev/cupcake-injection-npm/src/master/images/page_example_2.png "page example 2")​  
+![Code example](https://bitbucket.org/cupcakedev/cupcake-injection-npm/raw/master/images/code_example.png "Code example")​  
+![Page example 1](https://bitbucket.org/cupcakedev/cupcake-injection-npm/raw/master/images/page_example_1.png "Page example 1")​  
+![page example 1](https://bitbucket.org/cupcakedev/cupcake-injection-npm/raw/master/images/page_example_2.png "page example 2")​  
